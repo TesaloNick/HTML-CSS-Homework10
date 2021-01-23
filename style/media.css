@@ -1,0 +1,79 @@
+@media (max-width: 1220px){
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 950px){
+    .genital-warts{
+        grid-template-columns: 1fr;
+    }
+    .genital-warts h1, .genital-warts p{
+        width: 100%;
+    }
+    .genital-warts .yellow-ball, .genital-warts table, .yellow-ball + p, .three-images{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+@media (max-width: 810px){
+    .features{
+        grid-template-columns: 1fr;
+    }
+    .features > p, .features h1{
+        width: 100%;
+        padding-bottom: 3vh;
+    }
+    .features form{
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+@media (max-width: 750px){
+    .hello{
+        grid-template-columns: 1fr;
+    }
+    .hello > p{
+        display: none;
+    }
+    .service-list{
+        grid-template-columns: 19fr 16fr;
+    }
+    .service-list p{
+        width: 100%;
+        grid-column: 1/3;
+        padding-bottom: 30px;
+    }
+    footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 650px){
+    .awards{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-column-gap: 5vw;
+        grid-auto-flow: column;
+        text-align: center;
+    }
+    .awards .award{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+    .awards .year{
+        text-align: center;
+    }
+    .three-images{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 500px){
+    footer{
+        grid-template-columns: 1fr;
+        padding: 0;
+    } 
+    footer > a, footer > nav, footer > .social{
+        justify-self: center;
+        padding-bottom: 4vh;
+    }
+}
